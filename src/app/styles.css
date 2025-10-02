@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Monda:wght@400..700&display=swap');
+:root{
+   
+   --page: #d1ccc5; 
+   --bg: #F5F3EF;
+   --windowBg: #DE8432;
+   --secondary: #CF686A;
+   --borderColor: #493B31;
+   --text: #2C2A28;
+   --accent: #28B4CC;
+   font-size: 18px;
+}
+
+body{
+    
+    font-family: "Monda", sans-serif;
+    font-weight: 600;
+    margin: 2% 5%;
+    min-height: 100%;
+    background-color: var(--page);
+    background-image: url("/nordwood-themes-R53t-Tg6J4c-unsplash.jpg");
+    background-size: 75%;
+    background-attachment: scroll;
+    color: var(--text);
+    padding: 2vw 0;
+
+}
+
+.page{
+    margin: 3rem;
+    height: 80rem;
+}
+.container{
+    padding:0 2rem; 
+    margin: auto;
+    text-align: center; 
+}
+
+.home-page{
+    background-color: var(--bg);
+    margin: 0 3rem;  
+}
+
+header{
+    padding: 0;
+    overflow: hidden;
+}
+
+header ul{
+    list-style-type: none;
+
+}
+header li{
+    float: left;
+    padding: 0 1vw;
+    border: 2px solid var(--borderColor);
+    border-radius: 5rem;
+    margin: 0 1em;
+    background-color: var(--secondary);
+   
+}
+
+header li:hover{
+    background-color: var(--accent);
+}
+
+header li a{
+    text-decoration: none;
+    color: var(--text);
+}
+
+desc ul{
+    list-style-type: none;
+}
+.intro{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    margin-top: 5%;
+    gap: 1em;
+    /*  margin: 0; border: solid 2px black; */
+    max-height: 11rem;
+}
+.intro .name{
+    font-size: 8rem; 
+    color: var(--accent);
+    text-shadow: 5 2 0 #2C2A28;
+    /*margin: 0;
+    padding: 0;*/
+}
+
+#summary{
+    font-size: 2rem;
+    
+}
+.intro #hello{
+    /*border: solid 2px red;*/
+    font-size: 4rem;
+    line-height: 400%;
+}
+
+.about{
+    
+    
+    margin: 4rem;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    
+}
+
+.right{
+    margin-right: 2rem;
+}
+
+.left{
+    margin-left: 2rem;
+}
+
+.about .desc{
+    background-color: var(--bg);
+    padding: .5rem 2rem;
+    flex-grow: 1;
+    width: 0;
+}
+
+.about .label{
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 2rem 2rem;
+    background-color: var(--windowBg);
+    text-shadow: 2px 2px 0 var(--bg);
+}
+
+.about ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px
+}
+
+.color-pink{
+    background-color: var(--secondary);
+}
+
+.color-blue{
+    background-color: var(--accent);
+}
+
+.about ul li{
+    border: solid 2px var(--borderColor);
+    background-color: var(--secondary);
+    width: 10rem;
+    padding: 1em;
+    margin: auto;
+    border-radius: 2em;
+    text-align: center;
+   
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 1% 0;  
+}
+
+.nav-button button{    
+    width: 10vw;
+    padding: 2vw;
+    border: solid 2px;
+    border-color: black; 
+    font-size: 1.25vw;
+    background-color: #f7dda0;
+}
+
+footer{
+    font-size: small;
+    text-align: center;
+    border: solid 2px black; 
+    padding: 10px;
+    background-color: #f7dda0;
+}
+
+.skills{
+    text-align: center;
+    display: flex;
+    height: 300px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.skills-item{
+   display: inline;
+   height: 200px;
+   border: 2px solid black;
+   margin: 0 2vw;
+
+}
+
+.skills img{
+    width: 4vw;;
+    padding: 10px;
+}
+.project-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.window{
+    width: 40rem;
+    height: 25rem;
+    padding: 1rem;
+    box-shadow: 10px 10px black;
+    background-color: var(--windowBg);
+    z-index: 2;
+}
+
+.project-box{
+    display: flex; 
+    flex-direction: row;
+}
+
+.button-group{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.project-and-summary{
+    max-width: 40rem; 
+}
+
+.summary{
+    list-style: none;
+    display: flex;
+    flex-direction: column;  
+}
+
+.summary li{
+    float: right;
+    background-color: var(--secondary);
+}
+
+.project-nav{
+    width: 35rem;
+}
+
+.button-group button{
+    background: var(--windowBg);
+    text-align: left;
+    width: 10vw;
+    padding: .5vw;
+    border: none;
+    font-size: 1em;
+}
+
+.IntroPage{
+    overflow: scroll;
+    text-align: center;
+}
+
+.InfoPage{
+    overflow: scroll;
+    background-color: var(--bg);
+    border: 4px solid var(--borderColor);
+    padding: 2rem;
+    height: 20rem;   
+}
+
+.TechPage{
+    overflow: scroll;
+    background-color: var(--bg);
+    border: 4px solid var(--borderColor);
+    padding: 1rem;
+    height: 20rem;
+   
+}
+
+.tech-list{
+    text-align: center;
+    list-style: none;
+    width: 25rem;
+    margin: 2rem 0;
+}
+
+.tech-list .tech-group{
+    margin: 2rem 0rem;
+    border: 4px solid var(--borderColor);
+    border-radius: 1rem;
+    background-color: var(--secondary);
+}
+
+.tech-list li{
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.tech-title{
+    padding: 0;
+    border: 4px solid var(--borderColor);
+    background-color: var(--accent);
+}
+
+.page-content{
+    background-color: var(--bg);
+    padding: 1vw;
+    margin: 0;
+    border-radius: 4px;
+    border: 4px solid var(--borderColor);
+    height: 16rem;
+}
+
+.page-title{
+    border: 4px solid var(--borderColor);
+    border-radius: 4px;
+    text-align: center;
+    padding: .5vw;
+    background-color: var(--secondary);
+}
+
+
+.window img{
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section{
+    text-align: center;
+    background-color: var(--bg);
+    width: 70%;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    
+}
+
+.section h1{
+    color: var(--accent);
+    text-shadow: 2 2 0 #2C2A28;
+}
+
+.tab:hover{
+    box-shadow:
+        -12px 12px 0 var(--accent), /*Interior */
+        -8px 8px 0 var(--accent),
+        -4px 4px 0 var(--accent), 
+        -16px 12px 0 var(--borderColor),   /*Borders */
+        -12px 8px 0 var(--borderColor),
+        -4px 8px 0 var(--borderColor),
+        -8px 4px 0 var(--borderColor),
+        -4px 0 0 var(--borderColor),
+        0 -4px 0 var(--borderColor),
+        4px 0 0 var(--borderColor),
+       -12px 16px 0 var(--borderColor),
+       -8px 12px 0 var(--borderColor),
+       0 4px 0 var(--borderColor),
+       -4px 4px 0 var(--borderColor),
+       15px 15px 15px var(--text)
+    ;
+
+    background-color: var(--accent);
+}
+
+.pixel-border{
+    box-shadow:
+        -12px 12px 0 var(--windowBg), /*Interior */
+        -8px 8px 0 var(--windowBg),
+        -4px 4px 0 var(--windowBg),
+        -16px 12px 0 var(--borderColor),   /*Borders */
+        -12px 8px 0 var(--borderColor),
+        -4px 8px 0 var(--borderColor),
+        -8px 4px 0 var(--borderColor),
+        -4px 0 0 var(--borderColor),
+        0 -4px 0 var(--borderColor),
+        4px 0 0 var(--borderColor),
+       -12px 16px 0 var(--borderColor),
+       -8px 12px 0 var(--borderColor),
+       0 4px 0 var(--borderColor),
+       -4px 4px 0 var(--borderColor),
+       15px 15px 15px var(--text)
+       ;
+}
+
+.white-pixel-border{
+    box-shadow:
+        -12px 12px 0 var(--bg), /*Interior */
+        -8px 8px 0 var(--bg),
+        -4px 4px 0 var(--bg), 
+        -16px 12px 0 var(--borderColor),   /*Borders */
+        -12px 8px 0 var(--borderColor),
+        -4px 8px 0 var(--borderColor),
+        -8px 4px 0 var(--borderColor),
+        -4px 0 0 var(--borderColor),
+        0 -4px 0 var(--borderColor),
+        4px 0 0 var(--borderColor),
+       -12px 16px 0 var(--borderColor),
+       -8px 12px 0 var(--borderColor),
+       0 4px 0 var(--borderColor),
+       -4px 4px 0 var(--borderColor),
+       15px 15px 15px var(--text)
+    ;
+}
+
+
+.contact-group{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    column-gap: 1rem;
+    width: 30rem;
+    margin: auto;
+    background-color: var(--bg);
+    
+}
+.contact-group a img{ width: 4rem;  vertical-align: middle; }
+
+.contact-group a img:hover{ border: 2px solid var(--accent);}
+
+
+
+
+
+
+@media screen and (max-width: 450px) {
+
+    .body{
+        margin: 0;
+        font-size: 10px;
+    }
+
+    .page{
+        margin: 0;
+    }
+  
+    .home-page{
+        margin: 0;
+        padding: 0;
+        
+    }
+
+    .intro{
+        display: inline;
+        
+    }
+
+    .intro #hello{
+        border: solid 2px red;
+        font-size: 2rem;
+        margin: 0;
+    }
+
+    .intro .name{
+        font-size: 3rem; 
+        color: var(--accent);
+        text-shadow: 5 2 0 #2C2A28;
+        margin: 0;
+        /*padding: 0;*/
+        border: solid 2px red;
+    }
+
+    #summary{
+        display: none;
+    }
+
+
+    .about{
+        display: block;
+    }
+
+    .desc{
+        min-width: 5rem;
+        float:none;
+        margin: 0;
+    }
+
+    
+
+}
